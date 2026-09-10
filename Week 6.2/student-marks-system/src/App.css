@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: #f5f7fb;
+  color: #1e293b;
+}
+
+/* Main container */
+
+.app {
+  max-width: 1150px;
+  margin: auto;
+  padding: 45px 25px 60px;
+}
+
+/* Header */
+
+.app > h1 {
+  margin: 0;
+  padding: 35px;
+  border-radius: 22px;
+  text-align: center;
+  color: white;
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  box-shadow: 0 15px 35px rgba(79, 70, 229, 0.25);
+}
+
+/* Student section */
+
+.app > div:not(.management-section) {
+  margin-top: 35px;
+}
+
+.app h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* Student cards */
+
+.student-card {
+  position: relative;
+  background: white;
+  padding: 24px 28px;
+  margin: 16px 0;
+  border-radius: 18px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 5px 18px rgba(15, 23, 42, 0.06);
+
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  transition: all 0.25s ease;
+}
+
+.student-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.1);
+  border-color: #c7d2fe;
+}
+
+/* Student name */
+
+.student-card h3 {
+  min-width: 150px;
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+/* Student details */
+
+.student-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Department badge */
+
+.student-card p:last-of-type {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Select button */
+
+.student-card button {
+  margin-left: auto;
+
+  padding: 11px 18px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #4f46e5;
+  color: white;
+
+  font-family: inherit;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.student-card button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+/* Management section */
+
+.management-section {
+  margin-top: 35px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* Selected student heading */
+
+.management-section > h2 {
+  grid-column: 1 / -1;
+
+  margin: 0;
+
+  padding: 20px 25px;
+
+  border-radius: 16px;
+
+  background: #eef2ff;
+  color: #3730a3;
+
+  font-size: 20px;
+}
+
+/* Form and Result cards */
+
+.marks-form,
+.result {
+  background: white;
+
+  padding: 28px;
+
+  border-radius: 20px;
+
+  border: 1px solid #e5e7eb;
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+/* Section headings */
+
+.marks-form h2,
+.result h2 {
+  margin-top: 0;
+
+  font-size: 20px;
+
+  color: #111827;
+}
+
+.marks-form h3 {
+  color: #4f46e5;
+  margin-bottom: 25px;
+}
+
+/* Subject rows */
+
+.marks-form div {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 13px 15px;
+
+  margin: 12px 0;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+}
+
+.marks-form label {
+  font-weight: 600;
+  color: #475569;
+}
+
+/* Marks input */
+
+.marks-form input {
+  width: 90px;
+
+  padding: 10px 12px;
+
+  border: 1px solid #cbd5e1;
+
+  border-radius: 9px;
+
+  font-family: inherit;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  text-align: center;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+.marks-form input:focus {
+  border-color: #6366f1;
+
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+/* Result */
+
+.result p {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 15px;
+
+  margin: 12px 0;
+
+  border-radius: 12px;
+
+  background: #f8fafc;
+
+  color: #64748b;
+}
+
+.result p strong {
+  color: #334155;
+}
+
+/* Grade */
+
+.result h3 {
+  margin-top: 25px;
+
+  padding: 18px;
+
+  border-radius: 14px;
+
+  text-align: center;
+
+  background: #ecfdf5;
+
+  color: #047857;
+
+  font-size: 22px;
+}
+
+/* Pass / Fail */
+
+.result p:last-child {
+  justify-content: center;
+
+  font-weight: 700;
+
+  color: #047857;
+
+  background: #ecfdf5;
+}
+
+/* Responsive */
+
+@media (max-width: 800px) {
+  .management-section {
+    grid-template-columns: 1fr;
+  }
+
+  .student-card {
+    flex-wrap: wrap;
+  }
+
+  .student-card button {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .app > h1 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 500px) {
+  .app {
+    padding: 25px 15px;
+  }
+
+  .student-card {
+    display: block;
+  }
+
+  .student-card h3,
+  .student-card p {
+    margin-bottom: 10px;
+  }
+
+  .student-card button {
+    margin-top: 10px;
+  }
+}
