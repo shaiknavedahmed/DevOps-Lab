@@ -18,7 +18,7 @@ const studentRecords = [
     }
   },
   {
-    name: "Rahul Sharma",
+    name: "Rahul BhAAi",
     roll: "23CS102PE406",
     branch: "CSE (AI)",
     year: "4th Year",
