@@ -1,16 +1,55 @@
-# React + Vite
+# Student Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based Student Management Dashboard developed as part of the **DevOps and Full Stack** course.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://student-dashboard-flax-chi.vercel.app/
 
-## React Compiler
+## 📌 Project Overview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The Student Management Dashboard allows students to view their academic information through a simple and responsive web interface.
 
-## Expanding the ESLint configuration
+The dashboard displays:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Student profile information
+- Roll number, branch, and year
+- Enrolled subjects
+- Attendance percentage
+- Attendance eligibility status
+- Upcoming examination details
+- Multiple student profiles
+- Reusable React components
+
+## 🛠️ Technologies Used
+
+- React.js
+- Vite
+- JavaScript (JSX)
+- CSS
+- Vercel
+
+## 📂 Project Structure
+
+```text
+student-dashboard/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Attendance.jsx
+│   │   ├── ExamDetails.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Header.jsx
+│   │   ├── StudentCard.jsx
+│   │   ├── StudentProfile.jsx
+│   │   └── SubjectList.jsx
+│   ├── App.jsx
+│   ├── App.css
+│   ├── Dashboard.css
+│   └── main.jsx
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+└── vite.config.js
